@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --header-color: #e8e8e8;
+    --background-color: #1f2125;
+    --card-bg: #161617;
+    --bottom-bg: #0c0c0d;
+    --p-color: #919191;
+    --hover-color: #94d6f7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--header-color);
+    background-color: var(--background-color);
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 25px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 20px black;
+}
+
+.introduction {
+    padding-bottom: 1rem;
+}
+
+.user-name {
+    font-size: 1.5rem;
+}
+
+.user-title {
+    font-size: 0.75rem;
+    color: var(--p-color);
+    list-style: none;
+    padding: 0 0 1rem 0;
+    margin: 0;
+}
+
+.user-title > li {
+    padding-bottom: 0.5rem;
+}
+
+.contact-buttons {
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.about {
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.about > h1 {
+    font-size: 1rem;
+}
+
+.about > p {
+    font-size: 0.7rem;
+    color: var(--p-color);
+    padding-bottom: 1rem;
+}
+
+.bottom-part {
+    background-color: var(--bottom-bg);
+    border-radius: 0px 0px 20px 20px;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    height: 2rem;
+    background-color: var(--header-color);
+    color: var(--card-bg);
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
 }
